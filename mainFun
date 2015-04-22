@@ -1,6 +1,7 @@
 import praw
 
-# main function of isreactionary_bot by numandina
+# main function of isgunnutbot by sasnfbi1234
+# credit to numandina for code / help 
 # this is a heavily edited version of the code for user_history_bot by mr_tato
 
 class User:

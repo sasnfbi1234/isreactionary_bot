@@ -11,7 +11,7 @@ from mainFun import User
 from login_details import *
 
 # set up the reddit api and log in
-user_agent = ("isreactionary bot by numandina, "
+user_agent = ("isgunnutbot bot by sasnfbi1234, "
               "this file monitors new submissions "
               "and posts a comment if necessary")
 r = praw.Reddit(user_agent = user_agent)
@@ -25,9 +25,9 @@ with open("posts_scanned.txt", "r") as f:
     posts_scanned = filter(None, posts_scanned)
 
 # change this to determine which subs the bot will monitor
-subreddit = r.get_subreddit('anarchism+metanarchism')
+subreddit = r.get_subreddit('gunsarecool')
 
-# edit this to change subs being considered reactionary
+# edit this to change subs being considered gun-nut
 # subs that are automatically monitored
 suspicious_subs = ["mensrights", "theredpill", "coontown",
                    "greatapes", "whiterights", "protectandserve",

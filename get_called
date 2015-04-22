@@ -10,26 +10,17 @@ from mainFun import User
 from login_details import *
 
 # set up the reddit api and log in
-user_agent = ("isreactionary bot by numandina, "
+user_agent = ("isgunnutbot bot by sasnfbi1234, "
               "this file checks if bot was called ")
 r = praw.Reddit(user_agent = user_agent)
 r.login(reddit_username, reddit_password)
 
 # edit this to change subs being considered reactionary
 #subs that are checked when called
-suspicious_subs = ["anarchism", "metanarchism", "anarchy101",
-"capitalism", "conspiracy", "anarcho_capitalism",
-"mensrights", "theredpill", "coontown",
-"greatapes", "whiterights", "protectandserve",
-"darkenlightenment", "gendercritical", "gender_critical",
-"fatpeoplehate", "fatlogic", "new_right",
-"nationalsocialism", "nazi", "european",
-"polistan", "antipoz", "monarchism",
-"hbd", "srssucks", "sjsucks", "pissbeuponhim",
-"sjwhate", "strugglefucking", "rapingwomen",
-"killingwomen", "beatingwomen2", "beatingcripples",
-"beatingniggers", "beatingtrannies", "trans_fags",
-"tumblrinaction", "kotakuinaction", "subredditcancer"]
+suspicious_subs = [
+"tumblrinaction", "kotakuinaction", "subredditcancer"
+
+]
 
 
 with open("messages_seen.txt", "r") as f:
@@ -41,7 +32,7 @@ for msg in r.get_mentions(limit=None):
 
     if msg.id not in posts_replied_to:
 
-        username = msg.body[msg.body.find("/u/isreactionary_bot") + 21:]
+        username = msg.body[msg.body.find("/u/isgunnutbot") + 21:]
 
         if username.find("\n") > 0:
             username = username[0:username.find("\n")]
