@@ -1,4 +1,4 @@
-#!/root/isreactionary_bot/venv/bin/python3
+#!/root/bot/isreactionary_bot/venv/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

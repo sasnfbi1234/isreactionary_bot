@@ -1,4 +1,4 @@
-#!/root/isreactionary_bot/venv/bin/python3
+#!/root/bot/isreactionary_bot/venv/bin/python3
 # EASY-INSTALL-ENTRY-SCRIPT: 'pdb==0.1','console_scripts','pdb'
 __requires__ = 'pdb==0.1'
 import sys
