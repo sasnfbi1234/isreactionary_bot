@@ -39,7 +39,7 @@ for msg in r.get_mentions(limit=None):
         valid = False
 
         try:
-            print username
+            print "username"
             r.get_redditor(username)
             valid = True
         except:

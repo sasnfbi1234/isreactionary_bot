@@ -33,9 +33,12 @@ suspicious_subs = ["guns"]
 
 # get newest 50 submissions on r@ and met@
 for submission in subreddit.get_new(limit=50):
+    
+      
 
     # if this is the first time the bot ever sees this submission
     if submission.id not in posts_scanned:
+        print(running)
 
         # get username of submitter
         username = submission.author.name
